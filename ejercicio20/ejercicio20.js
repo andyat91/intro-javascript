@@ -10,8 +10,9 @@
  *  del programa.
  */
 
-function adivinarContrasena() {
-  //Escribe tu codigo aqui
+function adivinarContrasena(array,contraseña) {
+
+
 }
 
 module.exports = { adivinarContrasena };

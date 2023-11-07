@@ -4,23 +4,28 @@
  * de la operacion correcta segun el nombre de la funcion
  */
 
-function sum() {
+function sum(a,b) {
+    return a+b;
  //Escribe tu codigo aqui
 }
 
-function substract() {
+function substract(a,b) {
+    return a-b;
  //Escribe tu codigo aqui
 }
 
-function multiply() {
+function multiply(a,b) {
+    return a*b;
  //Escribe tu codigo aqui
 }
 
-function divide() {
+function divide(a,b) {
+    return a/b;
  //Escribe tu codigo aqui
 }
 
-function total() {
+function total(a,b) {
+    return sum(a,b)+substract(a,b)+multiply(a,b)+divide(a,b);
  //Escribe tu codigo aqui
 }
 

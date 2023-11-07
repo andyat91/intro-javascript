@@ -5,8 +5,16 @@
  *  la cuenta atras por consola y cuando llegue al final, se imprimira "Ring!! y el programa acabara .
  */
 
-function timer() {
-  //Escribe tu codigo aqui
+function timer(seg) {
+
+//IMPORTANTE cuenta descendente
+//i empieza en seg y desciende hasta 0 y se va restando uno
+  for( i=seg-1 ; i>=0 ; i--){
+  console.log(i);
+  if(i==0) {
+    console.log("¡¡Ring!!");
+  } 
+  }
 }
 
 module.exports = { timer };

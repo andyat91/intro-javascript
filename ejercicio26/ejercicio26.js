@@ -4,8 +4,13 @@
  *  calule el cubo de cada uno de ellos. Recuerda la estructura For;
  */
 
-function cuboNumerosArray() {
-  //Escribe tu codigo aqui
+function cuboNumerosArray(array) {
+  for(i=0 ; i<array.length ; i++) {
+    array[i]= array[i]*array[i]*array[i]
+    return `El cubo de ${array[i]} es ${array[i]*array[i]*array[i]}`;
+  }
+
 }
+
 
 module.exports = { cuboNumerosArray };

@@ -5,8 +5,15 @@
  *  13,26....130;
  */
 
-function tablaNumero() {
-  //Escribe tu codigo aqui
+function tablaNumero(N) {
+ 
+  let suma=0;
+  //Menor o igual que 10 porque es tabla de multiplicar
+  for (i=1 ; i<=10 ; i++) {
+      suma = suma +N;
+  //imprime dentro del for para que vaya sacando los numeros
+      return suma;
+  }
 }
 
 module.exports = { tablaNumero };
