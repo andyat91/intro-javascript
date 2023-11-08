@@ -7,12 +7,22 @@
  *  al cuarto intento.
  */
 
-function generateRandomNumber() {
-  //Escribe tu codigo aqui
+function generateRandomNumber(aleatorio) {
+  let aleatorio=parseInt(Math.random()*10);
+  if(aleatorio==0){
+    aleatorio=aleatorio+1;
+  }
+  return aleatorio;
 }
 
 function playGame(randomNumber, arrayNum) {
-  //Escribe tu codigo aqui
+ let i=0;
+ while(i<arrayNum){
+  if(arrayNum[i]==randomNumber) {
+    return i;
+  }
+  i++;
+ }
 }
 module.exports = {
   generateRandomNumber,
