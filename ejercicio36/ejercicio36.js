@@ -9,8 +9,18 @@
  * [2,3,4], [4,5,6] y [8,15,24]
  */
 
-function multiplicarElementosArray() {
-  //Escribe tu codigo aqui
+function multiplicarElementosArray(array2,array1,resultado) {
+  array1=[];
+  array2=[];
+  resultado=[];
+  
+  for(i=0 ; i<10 ; i++){
+      array1[i]= parseInt(Math.random()*20)+1;
+      array2[i]= parseInt(Math.random()*20)+1;
+      resultado[i]=array1[i]*array2[i];
+  
+  }
+  return resultado;
 }
-
+//me da fallo
 module.exports = { multiplicarElementosArray };

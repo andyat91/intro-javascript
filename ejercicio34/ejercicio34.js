@@ -8,7 +8,7 @@
  */
 
 function generateRandomNumber(aleatorio) {
-  let aleatorio=parseInt(Math.random()*10);
+aleatorio=parseInt(Math.random()*10);
   if(aleatorio==0){
     aleatorio=aleatorio+1;
   }
@@ -17,9 +17,12 @@ function generateRandomNumber(aleatorio) {
 
 function playGame(randomNumber, arrayNum) {
  let i=0;
- while(i<arrayNum){
+//revisar en clase no me sale cuando no hay ningun numero en el array
+ while(i<arrayNum.length){
   if(arrayNum[i]==randomNumber) {
-    return i;
+    console.log(`Exacto, has acertado en el ${i+1} intento! el numero era el ${arrayNum[i]}`);
+  } else if (arrayNum[arrayNum] && arrayNum[i]!=randomNumber) {
+    console.log("Ninguno de los numeros introducido coincide con el creado aleatoriamente");
   }
   i++;
  }

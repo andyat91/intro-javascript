@@ -41,8 +41,14 @@
     "E"
  */
 
-function crearDni() {
-  //Escribe tu codigo aqui
+function crearDni(array,dni) {
+  let resto =dni%23;
+
+  for(i=0 ; i<array.length ; i++) {
+      if(i==resto) {
+          return `DNI completo: ${dni+array[i]}`;
+      }
+  }
 }
 
 module.exports = { crearDni };
