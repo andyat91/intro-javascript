@@ -7,12 +7,26 @@
  * el promedio de todos los numeros
  */
 
-function generarArray() {
-  //Escribe tu codigo aqui
-}
+//para sacar el promedio
 
-function calculosArray() {
-  //Escribe tu codigo aqui
+function generarArray(length,s) {
+ let array=[];
+  for (i=0 ; i<length ; i++) {
+    array[i]=parseInt((Math.random()-0.5)*s);
+  }
+  return array;
+}
+//REVISAR
+function calculosArray(array,length) {
+  let promedio=0;
+  let suma0=0;
+    for (i=0; i<array.length ; i++) {
+    promedio +=array[i]; 
+    if(array[i]>0) {
+     suma0+=1;
+    }
+   }
+   return promedio/length;
 }
 
 module.exports = { generarArray, calculosArray };
