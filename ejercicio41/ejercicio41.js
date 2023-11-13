@@ -16,7 +16,7 @@ function generarArray(length,s) {
   }
   return array;
 }
-//REVISAR
+
 function calculosArray(array,length) {
   let promedio=0;
   let suma0=0;
